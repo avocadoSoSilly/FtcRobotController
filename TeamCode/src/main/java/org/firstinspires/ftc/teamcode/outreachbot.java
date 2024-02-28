@@ -18,4 +18,11 @@ public class outreachbot extends LinearOpMode {
 
 
         //initializing hardware
-        
+        watiForStart();
+        if (isStopRequested()) return;
+        while (opModeIsActive()) {
+
+
+
+            
+        }
