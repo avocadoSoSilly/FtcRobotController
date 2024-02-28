@@ -10,11 +10,11 @@ public class outreachbot extends LinearOpMode {
     @Override
     public void runOpMode() throws InterruptedException {
 
-        DcMotor Motor1, Motor2, thirdMotor, fourthMotor;
+        DcMotor Motor1, Motor2, Motor3, Motor4;
         Motor1 = hardwareMap.get(DcMotor.class, "firstMotor");
         Motor2 = hardwareMap.get(DcMotor.class, "secondMotor");
-        thirdMotor = hardwareMap.get(DcMotor.class, "thirdMotor");
-        fourthMotor = hardwareMap.get(DcMotor.class, "fourthMotor");
+        Motor3 = hardwareMap.get(DcMotor.class, "thirdMotor");
+        Motor4 = hardwareMap.get(DcMotor.class, "fourthMotor");
 
 
         //initializing hardware
