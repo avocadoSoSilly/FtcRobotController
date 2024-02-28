@@ -12,9 +12,9 @@ public class outreachbot extends LinearOpMode {
 
         DcMotor firthMotor, twoMotor, thirdMotor, fourthMotor;
         firstMotor = hardwareMap.get(DcMotor.class, "firstMotor");
-        amagus2Motor = hardwareMap.get(DcMotor.class, "secondMotor");
-        amagus3Motor = hardwareMap.get(DcMotor.class, "thirdMotor");
-        amagus4Motor = hardwareMap.get(DcMotor.class, "fourthMotor");
+        secondMotor = hardwareMap.get(DcMotor.class, "secondMotor");
+        thirdMotor = hardwareMap.get(DcMotor.class, "thirdMotor");
+        fourthMotor = hardwareMap.get(DcMotor.class, "fourthMotor");
 
 
         //initializing hardware
