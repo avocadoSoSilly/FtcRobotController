@@ -22,28 +22,11 @@ public class outreachbot extends LinearOpMode {
         while (opModeIsActive()) {
 
             //reading gamepad input
-            if (gamepad1.left_stick_y) {
-                Motor1.setPower(1);
-                Motor2.setPower(1);
-            }
-            else if (gamepad1.right_stick_y) {
-                Motor3.setPower(1);
-                Motor4.setPower(1);
-            }
-            else if (gamepad1.left_stick_y) {
-                Motor1.setPower(-1);
-                Motor2.setPower(-1);
-            else if (gamepad1.right_stick_y) {
-                Motor3.setPower(-1);
-                Motor4.setPower(-1);
-            }
-            //defaulting to 0 (no movement)
-            else {
-                Motor1.setPower(0);
-                Motor2.setPower(0);
-                Motor3.setPower(0);
-                Motor4.setPower(0);
-
+            Motor1.setPower(gamepad1.left_stick_y + gamepad1.right_stick_x);
+            Motor2.setPower(gamepad1.left_stick_y) + gamepad1.right_stick_x);
+            Motor3.setPower(-gamepad1.left_stick_y + gamepad1.right_stick_x);
+            Motor4.setPower(-gamepad1.left_stick_y + gamepad1.right_stick_x);
+            
 
             
         }
