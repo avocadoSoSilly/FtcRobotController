@@ -16,6 +16,15 @@ public class outreachbot extends LinearOpMode {
         Motor3 = hardwareMap.get(DcMotor.class, "Motor3");
         Motor4 = hardwareMap.get(DcMotor.class, "Motor4");
 
+        waitForStart();
+        if (isStopRequested()) return;
+        while (opModeIsActive()) {
+
+
+            
+        }
+
+
 
         //initializing hardware
         watiForStart();
