@@ -7,14 +7,21 @@ import com.qualcomm.robotcore.hardware.DcMotorSimple;
 
 @TeleOp
 public class outreachbot extends LinearOpMode {
+    private DcMotorEx Motor1, Motor2, Motor3, Motor4;
     @Override
     public void runOpMode() throws InterruptedException {
 
         DcMotor Motor1, Motor2, Motor3, Motor4;
-        Motor1 = hardwareMap.get(DcMotor.class, "Motor1");
-        Motor2 = hardwareMap.get(DcMotor.class, "Motor2");
-        Motor3 = hardwareMap.get(DcMotor.class, "Motor3");
-        Motor4 = hardwareMap.get(DcMotor.class, "Motor4");
+        Motor1 = hardwareMap.get(DcMotorEx.class, "Motor1");
+        Motor2 = hardwareMap.get(DcMotorEx.class, "Motor2");
+        Motor3 = hardwareMap.get(DcMotorEx.class, "Motor3");
+        Motor4 = hardwareMap.get(DcMotorEx.class, "Motor4");
+        IntakeMotor1 = hardwareMap.get(DcMotorEx.class, "IntakeMotor1");
+        IntakeMotor2 = hardwareMap.get(DcMotorEx.class, "IntakeMotor2");
+        OuttakeLoadServo = hardwareMap.get(DcServo.class, "OuttakeLoadServo");
+        OuttakeMotor1 = hardwareMap.get(DcMotorEx.class, "OuttakeMotor1");
+        OuttakeMotor2 = hardwareMap.get(DcMotorEx.class, "OuttakeMotor2");
+        
 
         //initializing hardware
         watiForStart();
